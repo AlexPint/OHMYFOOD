@@ -1,0 +1,40 @@
+.footer
+{
+    background-color: #353535;
+    padding: 30px;
+
+    &__logo
+    {
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    &__icon
+    {
+        width: 15px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+footer a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $secion-color;
+    font-family: 'robotoregular';
+    font-size: 1em;
+}
+
+footer a p
+{
+    color: $secion-color;
+    font-family: 'robotoregular';
+    font-size: 1em;
+}
+
+footer li
+{
+    margin-bottom: 8px;
+}

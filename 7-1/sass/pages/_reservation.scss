@@ -1,0 +1,15 @@
+#reservation
+{
+    @include flex-column-center;
+    padding: 40px;
+    margin: 0;
+    background-color: $secion-color;
+    text-align: center;
+    h1
+    {
+        width: 92%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,36 @@
+#header
+{
+    @include flex-row-start;
+	width: auto;
+	height: 55px;
+
+    &__logo
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+     
+        img
+        {
+            width: 140px;
+            height: auto;
+        }
+    }
+
+    &__arrow
+    {
+        @include flex-row-center;
+        width: 15px;
+        height: 15px;
+        margin-left: 23px;
+    }
+    
+
+    
+}
+
+
+
+

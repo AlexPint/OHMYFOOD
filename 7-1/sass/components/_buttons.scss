@@ -1,0 +1,74 @@
+.btn
+{
+    @include flex-row-center;
+    width: 210px;
+    height: 48px;
+    margin: 30px 0 20px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(171deg, rgba(255,121,218,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    box-shadow: $shadow-btn;
+
+    p{
+        color: $text-secondary-color;
+        font-family: 'robotomedium';
+        font-size: 1em;    
+    }
+
+    &__order
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.food__btn
+{
+    @include flex-row-space-between;
+    width: 100%;
+    height: 70px;
+    margin: 0 0 15px 0;
+    padding: 15px 10px 15px 10px;
+    background-color: $secion-color;
+    border: none;
+    border-radius: 15px;
+    box-shadow: $shadow-btn;
+
+    &__txt
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: 100%;
+        text-align: start;
+    }
+    &__price
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        width: auto;
+        height: 100%;
+        margin: 0 ;
+        padding: 0;
+        position: relative;
+        left: -11px;
+    }
+}
+
+
+
+.food__btn__txt h3
+{
+    font-size: 1.15em;
+}
+
+
+.food__btn__price p
+{
+    font-family: 'robotomedium';
+    font-size: 1.15em;
+}
