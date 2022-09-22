@@ -1,0 +1,179 @@
+.btn
+{
+    transform: scale(1);
+    background: $btn-color;
+    transition: transform 500ms ease-in-out,background 500ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.15);
+        background: $btn-color;
+
+        p{
+            color: $text-secondary-color;
+        }
+    }
+
+} 
+
+
+
+
+.function__btn
+{
+    background-color: $secion-color;
+    transition: background-color 300ms;
+    &:hover{
+        background-color: lighten($primary-color, 30);
+        .function_icon{
+            color: $primary-color;
+        }
+
+    }
+}
+
+
+/* animation Check */
+.food__btn__check{
+    transform: translateX(100px);
+    transition: transform 500ms ease-in-out; 
+}
+
+.food__btn__price{
+    transform: translateX(0px);
+    transition: transform 500ms ease-in-out; 
+}
+
+
+
+.food__btn:hover .food__btn__check{
+    transform: translateX(0px);
+}
+
+.food__btn:hover .food__btn__price{
+    transform: translateX(-80px);
+}
+
+
+
+.fa-circle-check{
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out; 
+}
+.food__btn:hover .fa-circle-check{
+    transform: rotate(-360deg);
+}
+
+
+
+
+
+@keyframes anim-card
+{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.anim__starter
+{
+    animation: 500ms 20ms anim-card;
+}
+.anim__btn--1
+{
+    animation: 500ms 50ms anim-card;
+}
+.anim__btn--2
+{
+    animation: 500ms 100ms anim-card;
+}
+.anim__btn--3
+{
+    animation: 500ms 150ms anim-card;
+}
+
+
+.anim__dish
+{
+    animation: 500ms 170ms anim-card;
+}
+.anim__btn--4
+{
+    animation: 500ms 200ms anim-card;
+}
+.anim__btn--5
+{
+    animation: 500ms 250ms anim-card;
+}
+.anim__btn--6
+{
+    animation: 500ms 300ms anim-card; 
+}
+
+
+.anim__dessert
+{
+    animation: 500ms 330ms anim-card;
+}
+.anim__btn--7
+{
+    animation: 500ms 350ms anim-card;
+}
+.anim__btn--8
+{
+    animation: 500ms 400ms anim-card;
+}
+.anim__btn--9
+{
+    animation: 500ms 450ms anim-card;
+}
+
+
+
+
+
+
+
+.heart{
+    @include flex-row-center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    z-index: 2000;
+    &:hover{
+        .like-icon{
+            opacity: 1;
+            transform: scale(1.15) ;
+        }
+    }
+}
+
+.like-icon {
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 400ms linear;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#9c47fc, #356ad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.not-like-icon {
+    position: absolute;
+    right: 10px;
+    color: black;
+}
+
+

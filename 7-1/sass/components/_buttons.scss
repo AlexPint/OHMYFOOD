@@ -7,7 +7,6 @@
     padding: 15px;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(171deg, rgba(255,121,218,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     box-shadow: $shadow-btn;
 
     p{
@@ -34,7 +33,9 @@
     border: none;
     border-radius: 15px;
     box-shadow: $shadow-btn;
-
+    position: relative;
+    overflow: hidden;
+    
     &__txt
     {
         display: flex;
@@ -43,6 +44,10 @@
         width: auto;
         height: 100%;
         text-align: start;
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     &__price
     {
@@ -54,21 +59,42 @@
         height: 100%;
         margin: 0 ;
         padding: 0;
-        position: relative;
-        left: -11px;
+    }
+    &__check
+    {
+        @include flex-column-center;
+        width: 80px;
+        height: 70px;
+        background-color: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        position: absolute;
+        right: 0px;
+        color: white;
+        overflow: hidden;
     }
 }
 
 
 
+
+
 .food__btn__txt h3
 {
+    width: auto;
     font-size: 1.15em;
+    text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
 }
 
 
 .food__btn__price p
 {
+   width: auto;
     font-family: 'robotomedium';
     font-size: 1.15em;
+    text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
 }

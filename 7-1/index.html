@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="screen and (min-width: 992px)" href=""/>
-        <link rel="stylesheet" media="screen and (min-width: 768px)" href=""/>
-        <link rel="stylesheet" media="screen and (max-width : 768px)" href="public/css/mobile.css"/>
+        <link rel="stylesheet" href="public/css/mobile.css"/>
+		<script src="https://kit.fontawesome.com/bd73b0b4dc.js" crossorigin="anonymous"></script>
         <title>OhMyFood.com</title>
 	</head>
 
 	<body>
+		<div class="page-loader">
+			<div class="spinner"></div>
+
+		</div>
 		<header id="header">
 			<div id="header__logo">
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
@@ -17,7 +20,7 @@
 		</header>
 		<main>
 			<section id="location">
-            	<img src="icons/location-dot-solid.svg" alt="icon location">
+            	<div id="location__icon"><i class="fa-solid fa-location-dot"></i></div>
             	<p>Paris, Belleville</p>
             </section>
 			<section id="reservation">
@@ -27,113 +30,108 @@
                     <p>Explorer nos restaurants</p>
                 </a>
 			</section>
-			<section  id="functioning">
+			<section  class="functioning">
 				<h1>Fonctionnement</h1>
-				<div id="functioning_block">
-					<form>
+				<div class="functioning__block">
 						<button class="function__btn">
                             <div class="function__btn__icon">
                                 <p class="function_number">1</p>
-                                <p class="function_icon"><img src="icons/mobile-screen-button-solid.svg" alt="icon phone"></p>
+                                <span class="function_icon"><i class="fa-solid fa-mobile-screen-button fa-lg"></i></span>
                             </div>
 							<div class="function__btn__text">
 								<p>Choisissez un restaurant</p>
 							</div>
 						</button>
-					</form>
-					<form>
 						<button class="function__btn">
                             <div class="function__btn__icon">
                                 <p class="function_number">2</p>
-                                <p class="function_icon"><img src="icons/list-ul-solid.svg" alt="icon phone"></p>
+                                <span class="function_icon"><i class="fa-solid fa-list fa-lg"></i></span>
                             </div>
 							<div class="function__btn__text">
 								<p>Composez votre menu</p>
 							</div>
 						</button>
-					</form>
-					<form>
 						<button class="function__btn">
                             <div class="function__btn__icon">
                                 <p class="function_number">3</p>
-                                <p class="function_icon"><img  src="icons/store-solid.svg" alt="icon phone"></p>
+                                <span class="function_icon"><i class="fa-solid fa-store fa-lg"></i></span>
                             </div>
 							<div class="function__btn__text">
 								<p>Dégustez au restaurant</p>
 							</div>
-						</button>
-					</form>
 			</section>
-			<section id="restaurants">
+			<section id="restaurant">
 				<h1>Restaurants</h1>
-				<article>
+				<article class="card-choice">
 					<div class="card">
-                    	<a href="#">
+                    	<a href="menu1.html">
                     		<div class="card__img">
 	                    		<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant" class="card__img--v1">
                                 <span class="card__img__new">Nouveau</span>
                     		</div>
-                            <div class="card__description">
-                            	<div>
-                            		<h2>La palette du goût</h2>
-                                	<p>Ménilmontant</p>
-                                </div>
-                                <div >
-                                	<img src="icons/heart.svg" alt="icon heart">
-                                </div>
-                            </div>
-                        </a>
+						</a>
+                        <div class="card__description">
+							<div>
+								<h2>La palette du goût</h2>
+								<p>Ménilmontant</p>
+							</div>
+							<div class="heart">
+								<i class=" not-like fa-regular fa-heart fa-2xl"></i>
+								<i class=" like-icon he fa-solid fa-heart fa-2xl "></i>
+							</div>
+						</div>
                     </div>
 					<div class="card">
-                    	<a href="#">
+                    	<a href="menu2.html">
                     		<div class="card__img">
 	                    		<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo restaurant" class="card__img--v1">
                                 <span class="card__img__new">Nouveau</span>
                     		</div>
+						</a>
                             <div class="card__description">
                             	<div>
                             		<h2>La note enchantée</h2>
                                 	<p>Charonne</p>
                                 </div>
-                                <div >
-                                	<img src="icons/heart.svg" alt="icon heart">
-                                </div>
+                                <div class="heart">
+									<i class=" not-like fa-regular fa-heart fa-2xl"></i>
+									<i class=" like-icon fa-solid fa-heart fa-2xl "></i>
+								</div>
                             </div>
-                        </a>
                     </div>
 					<div class="card">
-                    	<a href="#">
+                    	<a href="menu3.html">
                     		<div class="card__img">
 	                    		<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo restaurant" class="card__img--v1">
-                                <span class="card__img__new">Nouveau</span>
                     		</div>
+						</a>
                             <div class="card__description">
                             	<div>
                             		<h2>À la française</h2>
                                 	<p>Cité Rouge</p>
                                 </div>
-                                <div >
-                                	<img src="icons/heart.svg" alt="icon heart">
-                                </div>
-                            </div>
-                        </a>
+                                <div class="heart">
+									<i class=" not-like fa-regular fa-heart fa-2xl"></i>
+									<i class=" like-icon fa-solid fa-heart fa-2xl "></i>
+								</div>
+                            </div>    
                     </div>
 					<div class="card">
-                    	<a href="#">
+                    	<a href="menu4.html">
                     		<div class="card__img">
 	                    		<img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo restaurant" class="card__img--v1">
-                                <span class="card__img__new">Nouveau</span>
                     		</div>
+						</a>
                             <div class="card__description">
                             	<div>
                             		<h2>Le délice des sens</h2>
                                 	<p>Folie-Méricourt</p>
                                 </div>
-                                <div >
-                                	<img src="icons/heart.svg" alt="icon heart">
-                                </div>
+								<div class="heart">
+									<i class=" not-like fa-regular fa-heart fa-2xl"></i>
+									<i class=" like-icon fa-solid fa-heart fa-2xl "></i>
+								</div>
                             </div>
-                        </a>
                     </div>
 				</article>
 			</section>

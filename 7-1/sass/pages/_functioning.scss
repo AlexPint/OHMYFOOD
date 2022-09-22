@@ -1,4 +1,4 @@
-#functioning
+.functioning
 {
     width: 100%;
     height: auto;
@@ -12,9 +12,25 @@
     {
         width: 100%;
         height: auto;
-        @include flex-column;
+        display: flex;
+        flex-direction: row;
+
+
+        
+        
+
     }
 }
+
+.functioning__block
+{
+    @include flex-column;
+    @media screen and (min-width: 1000px)
+            {
+                @include flex-row-space-between;
+            }
+}
+
 
 
 .function__btn
@@ -24,16 +40,20 @@
     height: 70px;
     margin: 0 0 20px 0;
     padding: 0;
-    background-color: $secion-color;
     border: none;
     border-radius: 15px;
     box-shadow: $shadow-btn;
+    position: relative;
+    @media screen and (min-width: 1000px)
+            {
+                width: 30%;
+            }
 
     &__icon
     {
         width: auto;
         height: auto;
-        @include flex-center;
+        @include flex-row-center;
         position: absolute;
         left: 11px;
     }
@@ -67,15 +87,14 @@
     color: $text-secondary-color;
     text-align: center;
     font-size: 0.9em;
+    position: absolute;
+    left: -20px;
 }
 
 .function_icon
 {
-    @include flex-center;
+    @include flex-row-center;
     margin: 0 0 0 15px;
-    img
-    {
-        width: 15px;
-        height: auto;
-    }
+    width: auto;
+    height: 25px;
 }
