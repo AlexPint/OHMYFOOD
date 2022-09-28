@@ -34,7 +34,7 @@
 
 /* animation Check */
 .food__btn__check{
-    transform: translateX(100px);
+    transform: translateX(70px);
     transition: transform 500ms ease-in-out; 
 }
 
@@ -50,18 +50,19 @@
 }
 
 .food__btn:hover .food__btn__price{
-    transform: translateX(-80px);
+    transform: translateX(-70px);
 }
 
 
 
-.fa-circle-check{
+
+.fa-check-circle{
     transform: rotate(0deg);
     transition: transform 500ms ease-in-out; 
 }
-.food__btn:hover .fa-circle-check{
+.food__btn:hover .fa-check-circle{
     transform: rotate(-360deg);
-}
+} 
 
 
 
@@ -149,7 +150,8 @@
     width: 50px;
     height: 50px;
     right: 20px;
-    z-index: 2000;
+
+
     &:hover{
         .like-icon{
             opacity: 1;
@@ -158,22 +160,22 @@
     }
 }
 
-.like-icon {
+.like-icon{
     position: absolute;
+    right: 10px;
     opacity: 0;
-    transform: scale(1);
-    transition: transform 400ms linear;
+    transform: scale(0);
+    transition: transform 300ms linear;
     cursor: pointer;
-    background: -webkit-linear-gradient(#9c47fc, #356ad2);
-    -webkit-background-clip: text;
+    background: linear-gradient(0deg, #9356dc, #ff79da);
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 
 
-.not-like-icon {
+.not-like-icon{
     position: absolute;
     right: 10px;
     color: black;
 }
-
-

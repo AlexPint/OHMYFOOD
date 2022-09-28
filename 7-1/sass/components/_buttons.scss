@@ -45,32 +45,36 @@
         height: 100%;
         text-align: start;
         position: relative;
+        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
+        flex: 2;
+  
+        
+
     }
     &__price
     {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
-        width: auto;
-        height: 100%;
-        margin: 0 ;
+        align-items: center;
+        width: 30px;
+        height: 70px;
+        margin: 0 0 0 3px ;
         padding: 0;
+        flex: 1;
     }
     &__check
     {
         @include flex-column-center;
-        width: 80px;
+        width: 70px;
         height: 70px;
         background-color: $tertiary-color;
         border-radius: 0 15px 15px 0;
         position: absolute;
         right: 0px;
         color: white;
-        overflow: hidden;
     }
 }
 
@@ -81,20 +85,27 @@
 .food__btn__txt h3
 {
     width: auto;
-    font-size: 1.15em;
+    font-family: 'robotobold';
+    font-size: 1em;
+    white-space: nowrap;
     text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-
+    overflow: hidden;
 }
 
-
-.food__btn__price p
+.food__btn__txt p
 {
-   width: auto;
-    font-family: 'robotomedium';
-    font-size: 1.15em;
+    font-size: 0.9em;
+    white-space: nowrap;
     text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+    overflow: hidden;
+}
+
+.food__btn__price p{
+    width: auto;    
+    font-family: 'robotomedium';
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
