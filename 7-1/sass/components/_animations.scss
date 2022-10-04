@@ -40,10 +40,8 @@
 
 .food__btn__price{
     transform: translateX(0px);
-    transition: transform 500ms ease-in-out; 
+    transition: transform 500ms ease-in-out;
 }
-
-
 
 .food__btn:hover .food__btn__check{
     transform: translateX(0px);
@@ -51,8 +49,8 @@
 
 .food__btn:hover .food__btn__price{
     transform: translateX(-70px);
+    padding-left: 80px;
 }
-
 
 
 
