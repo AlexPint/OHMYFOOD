@@ -118,7 +118,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   height: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -300,7 +300,7 @@ ul {
 
 .food__btn__price {
   transform: translateX(0px);
-  transition: transform 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .food__btn:hover .food__btn__check {
@@ -442,7 +442,7 @@ ul {
   border-color: #9356DC #FF79DA #99E2D0 white;
   animation-name: spinner;
   animation-duration: 1500ms;
-  animation-timing-function: easy;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -508,9 +508,15 @@ ul {
   padding: 30px;
 }
 .footer__logo {
-  width: 30%;
+  width: 200px;
   height: auto;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+  .footer__logo {
+    width: 250px;
+    height: auto;
+  }
 }
 .footer__icon {
   width: 15px;
